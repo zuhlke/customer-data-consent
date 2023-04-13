@@ -1,0 +1,19 @@
+{
+
+    "processingPermitted":["Analytics",
+        "Reporting",
+        "Marketing",
+        "Performance",
+        "Regulatory",
+        "Sale to 3rd Parties"
+        ],
+    "participatingOrganisation":["Octopus",
+        "EON",
+        "EDF",
+        "SPEN",
+        "Scottish Power",
+        "UKPN",
+        "ENWL"]
+
+
+}

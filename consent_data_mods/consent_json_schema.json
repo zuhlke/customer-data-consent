@@ -1,0 +1,162 @@
+
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "consentData": {
+        "type": "object",
+        "properties": {
+          "consentGiver": {
+            "type": "string"
+          },
+          "retentionPeriod": {
+            "type": "string"
+          },
+          "consentedOrganistions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "dataControllerName": {
+            "type": "string"
+          },
+          "processKey": {
+            "type": "integer"
+          },
+          "consentMethod": {
+            "type": "string"
+          },
+          "lawfulBasis": {
+            "type": "string"
+          },
+          "processingPermitted": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "consentStatus": {
+            "type": "string"
+          },
+          "businessKey": {
+            "type": "integer"
+          },
+          "dateConsented": {
+            "type": "string"
+          },
+          "consentVersionRef": {
+            "type": "integer"
+          },
+          "typeProcessingPermitted": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "consentReviewDate": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "consentGiver",
+          "retentionPeriod",
+          "consentedOrganistions",
+          "dataControllerName",
+          "processKey",
+          "consentMethod",
+          "lawfulBasis",
+          "processingPermitted",
+          "consentStatus",
+          "businessKey",
+          "dateConsented",
+          "consentVersionRef",
+          "typeProcessingPermitted",
+          "consentReviewDate"
+        ]
+      },
+      "businessProcessing": {
+        "type": "object",
+        "properties": {
+          "processType": {
+            "type": "string"
+          },
+          "processingPurpose": {
+            "type": "string"
+          },
+          "participatingOrganisation": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "dataProcessingConducted": {
+            "type": "string"
+          },
+          "consentKey": {
+            "type": "integer"
+          },
+          "retentionReviewDate": {
+            "type": "string"
+          },
+          "precedentProcess": {
+            "type": "string"
+          },
+          "dependentProcesses": {
+            "type": "string"
+          },
+          "outputProcessList": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "businessKey": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "processType",
+          "processingPurpose",
+          "participatingOrganisation",
+          "dataProcessingConducted",
+          "consentKey",
+          "retentionReviewDate",
+          "precedentProcess",
+          "dependentProcesses",
+          "outputProcessList",
+          "businessKey"
+        ]
+      },
+      "businessData": {
+        "type": "object",
+        "properties": {
+          "dataClassification": {
+            "type": "string"
+          },
+          "retentionReviewDate": {
+            "type": "string"
+          },
+          "datasetOwner": {
+            "type": "string"
+          },
+          "consentKey": {
+            "type": "integer"
+          },
+          "processKey": {
+            "type": "integer"
+          }
+        },
+        "required":[
+            "dataClassification",
+            "retentionReviewDate",
+            "datasetOwner",
+            "consentKey",
+            "processKey"
+        ]
+    }
+    }
+}
