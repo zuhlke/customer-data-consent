@@ -5,13 +5,13 @@ Installation
 To use this web app, you'll need to clone the repository and install any necessary dependencies. You can do this by running the following commands:
 
 
-$ git clone https://github.com/yourusername/yourproject.git
-$ cd yourproject
-$ pip install -r requirements.txt
+'git clone https://github.com/yourusername/yourproject.git
+cd yourproject
+pip install -r requirements.txt'
 
 Usage
 To use the web app, simply run the following command:
-python app.py
+'python app.py'
 
 This will start the Flask server and launch the web app. You can then access the app by navigating to http://localhost:5000 in your web browser.
 
