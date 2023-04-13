@@ -4,7 +4,9 @@ This project is a web application built with Flask, a Python web framework, that
 Usage
 To use the web app, simply run the following command:
 
-'python app.py'
+```
+python app.py
+```
 
 This will start the Flask server and launch the web app. You can then access the app by navigating to http://localhost:5000 in your web browser.
 
