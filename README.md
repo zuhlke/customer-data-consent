@@ -10,7 +10,7 @@ python app.py
 
 This will start the Flask server and launch the web app. You can then access the app by navigating to http://localhost:5000 in your web browser.
 
-Once you're in the app, you can enter customer consent data to be checked. The app will then validate the data against a set of predefined rules and provide feedback on any errors or inconsistencies detected. You can also export the validated data to a CSV file for further analysis.
+Once you're in the app, you can enter customer consent data to be checked. The app will then validate the data against a set of predefined rules and provide feedback on any errors or inconsistencies detected.
 
 
 
