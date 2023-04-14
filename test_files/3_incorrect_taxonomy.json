@@ -1,0 +1,55 @@
+{
+    "consentData" : {
+        "consentGiver" : "Steer, Steven",
+        "retentionPeriod": "90",
+        "consentedOrganistions": ["NGESO","EON","EDF"],
+        "dataControllerName": "Steer, Steven",
+        "processKey": 12345,
+        "consentMethod": "Online",
+        "lawfulBasis": "Consent",
+        "processingPermitted": ["Analytical",
+            "Reports",
+            "Marketing",
+            "Performance",
+            "Regulatory Compliance",
+            "Sale to 3rd Parties"
+            ],
+        "consentStatus": "Updated",
+        "businessKey": 2849453,
+        "dateConsented": "23-03-2023",
+        "consentVersionRef": 2,
+        "typeProcessingPermitted": ["Marketing","Analytics"],
+        "consentReviewDate": ["20-03-1923","21=03-2023"]
+    },
+    "businessProcessing": {
+        "processType": "Matching",
+        "processingPurpose": "Aggregation",
+        "participatingOrganisation": ["Octopus",
+            "EON",
+            "EDF",
+            "SPEN",
+            "Scottish Power",
+            "UKPN",
+            "ENWL"],
+        "dataProcessingConducted": "Matching with another dataset",
+        "consentKey": 1243902,
+        "retentionReviewDate": "30-03-2023",
+        "precedentProcess": "data ingestion",
+        "dependentProcesses": "visualisation and export",
+        "outputProcessList": ["process 1","process 2"],
+        "businessKey": 318943
+    },
+    "businessData":  {
+        "dataClassification": "RED",
+        "retentionReviewDate": "30-03-2023",
+        "datasetOwner": "Steer, Steven",
+        "consentKey":1243902,
+        "processKey":12345
+    }
+}
+
+
+
+
+  
+

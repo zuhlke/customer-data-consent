@@ -126,54 +126,56 @@ def consent_compatibility_check(consent_json, EXISTING_CONSENT_FILE):
 
         
 if __name__ == "__main__":
-    test_json = {
-    "consentGiver": "Steer, Steven",
-    "retentionPeriodDays": 90,
-    "dataCreationDate":"23-03-2020",
-    "retentionDates": "23-03-2024",
-    "consentedOrganisations": ["UKPN", "NGESO","Octopus"],
-    "dataController": "Steer, Steven",
-    "foreignKeyProcess": 4328934,
-    "consentMethod": "Online",
-    "lawfulBasis": "Consent",
-    "permittedProcessing": ["Analytics",
-        "Reporting",
-        "Marketing",
-        "Performance",
-        "Regulatory",
-        "Sale to 3rd Parties"
-        ],
-    "dataConsentStatus": "Withdrawn",
-    "consentDate": "23-03-2023",
-    "consentVersionRef": "2",
-    "processingPermitted": ["Analytics",
-        "Reporting",
-        "Marketing",
-        "Performance",
-        "Regulatory",
-        "Sale to 3rd Parties"
-        ],
-    "consentReviewDate":"23-03-2023",
-    "dataZoneClassification": "Unclassified",
-    "datasetOwner": "Steer, Steven",
-    "processType": "Analytics",
-    "processPurpose": "Analytics",
-    "participatingOrganisations": ["Octopus",
-        "EON",
-        "EDF",
-        "SPEN",
-        "Scottish Power",
-        "UKPN",
-        "ENWL"],
-    "dataProcessingConducted": ["type1","type2"],
-    "foreignKeyConsent":1234324,
-    "precedentProcesses": [],
-    "dependentProcesses": [],
-    "outputDataList": []
-
-
+    json_data = {
+    "consentData" : {
+        "consentGiver" : "Steer, Steven",
+        "retentionPeriod": "90",
+        "consentedOrganistions": ["NGESO","EON","EDF"],
+        "dataControllerName": "Steer, Steven",
+        "processKey": 12345,
+        "consentMethod": "Online",
+        "lawfulBasis": "Consent",
+        "processingPermitted": ["Analytics",
+            "Reporting",
+            "Marketing",
+            "Performance",
+            "Regulatory"
+            ],
+        "consentStatus": "Updated",
+        "businessKey": 2849453,
+        "dateConsented": "23-03-2023",
+        "consentVersionRef": 2,
+        "typeProcessingPermitted": ["Marketing","Analytics"],
+        "consentReviewDate": ["20-03-1923","21=03-2023"]
+    },
+    "businessProcessing": {
+        "processType": "Matching",
+        "processingPurpose": "Aggregation",
+        "participatingOrganisation": ["Octopus",
+            "EON",
+            "EDF",
+            "SPEN",
+            "UKPN",
+            "ENWL"],
+        "dataProcessingConducted": "Matching with another dataset",
+        "consentKey": 1243902,
+        "retentionReviewDate": "30-03-2023",
+        "precedentProcess": "data ingestion",
+        "dependentProcesses": "visualisation and export",
+        "outputProcessList": ["process 1","process 2"],
+        "businessKey": 318943
+    },
+    "businessData":  {
+        "dataClassification": "RED",
+        "retentionReviewDate": "30-03-2023",
+        "datasetOwner": "Steer, Steven",
+        "consentKey":1243902,
+        "processKey":12345
+    }
 }
 
-   
-    print(consent_compatibility_check(test_json, EXISTING_CONSENT_FILE))
-    print('DONE')
+
+
+
+
+    consent_compatibility_check(json_data, EXISTING_CONSENT_FILE)
